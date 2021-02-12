@@ -270,9 +270,11 @@ button {
   background: #bad6dc;
   padding: 0.5rem;
   font-family: "Playfair Display", serif;
+  font-size: 1rem;
   font-weight: 400;
   border-radius: 5%;
-  max-width: 15rem;
+  max-height: 10rem;
+  max-width: 20rem;
   margin-bottom: 2rem;
 }
 
