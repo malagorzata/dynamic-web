@@ -26,12 +26,18 @@ function showProduct(product) {
   if (product.discount) {
     document.querySelector(".purchase").classList.add("onSale");
     document.querySelector(".price-product").classList.add("cross");
+    document.querySelector(".discount p").textContent = `${
+      (product.price * (100 - product.discount)) / 100
+    } DKK`;
+    document.querySelector(
+      ".discount-value"
+    ).textContent = `-${product.discount}%`;
+    document.querySelector(".discount").classList.remove("hide");
+  } else {
+    document.querySelector(".discount").classList.add("hide");
   }
 
   document.querySelector(".price-product").textContent = `${product.price} DKK`;
-  document.querySelector(".discount p").textContent = `${
-    (product.price * (100 - product.discount)) / 100
-  } DKK`;
 
   document.querySelector(
     "img.product-page"

@@ -81,9 +81,10 @@ nav a:link {
   justify-content: center;
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #003a7d;
-  font-size: 2rem;
+  color: #003a7d;
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color:  */
+  font-size: 1.5rem;
   color: white;
   margin: 0;
 }
@@ -93,9 +94,10 @@ nav a:link {
 .categ a:visited,
 .categ a:active {
   text-decoration: none;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #003a7d;
-  font-size: 2rem;
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #003a7d; */
+  color: #003a7d;
+  font-size: 1.5rem;
 }
 /*Products*/
 .productlist main {
@@ -151,7 +153,8 @@ h3 {
 }
 
 .price {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+
   font-weight: 400;
   color: #434141;
   font-size: 1.5rem;
@@ -160,11 +163,18 @@ h3 {
   justify-content: center;
 }
 .discount {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #434141;
   font-size: 1rem;
   margin: 0;
+  padding: 0;
+}
+
+.discprice,
+.discount-value {
+  margin: 0;
+  padding: 0;
 }
 body article .discount,
 body article .price span {
@@ -238,7 +248,8 @@ h4 {
 .price-product {
   display: flex;
   justify-content: flex-start;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+
   font-weight: 400;
   color: #434141;
   font-size: 2rem;
@@ -290,6 +301,8 @@ button {
 .discount p {
   font-size: 1.7rem;
   color: red;
+  padding: 0.2rem;
+  margin: 0;
 }
 
 .cross {
@@ -297,6 +310,9 @@ button {
   font-size: 1.2rem;
 }
 
+.hide {
+  display: none;
+}
 @media screen and (max-width: 1100px) {
   h1 {
     font-size: 2.5rem;
@@ -313,6 +329,25 @@ button {
     flex-direction: column;
     justify-content: center;
   }
+}
+
+.categoriesList {
+  display: flex;
+  justify-content: center;
+}
+.type {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.type .categ {
+  padding: 1rem;
+}
+
+.categ {
+  border: 4px #003a7d solid;
+  margin: 1rem;
 }
 
 @media screen and (min-width: 1000px) {
