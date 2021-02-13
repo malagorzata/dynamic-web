@@ -78,10 +78,9 @@ nav a:link {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   color: #003a7d;
-  font-size: 2rem;
-  color: white;
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .categ a:hover,
@@ -92,7 +91,7 @@ nav a:link {
   /* -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #003a7d; */
   color: #003a7d;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 /*Products*/
 .productlist main {
@@ -202,7 +201,6 @@ a {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #434141;
-  font-size: 1rem;
   margin: 0;
   text-decoration: underline;
 }
